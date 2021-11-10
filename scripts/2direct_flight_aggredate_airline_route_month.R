@@ -8,8 +8,8 @@ library(lubridate)
 library(vroom)
 library(rstudioapi)
 
-#setwd(dirname(rstudioapi::getActiveDocumentContext()$path)) ** this file location as wd **
-setwd("~/ANAC_MICRODADOS/data")
+setwd(dirname(rstudioapi::getActiveDocumentContext()$path)) #** this file location as wd **
+
 datayears <- 2000:2021
 
 #----------------------------------------------------------------------------
