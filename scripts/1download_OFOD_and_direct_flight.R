@@ -18,7 +18,7 @@ for (i in 1:NROW(pg)){
   tryCatch({
    url <- as.character(pg[i,1])
    filename <- as.character(rm_between(url,'microdados/', '.zip', extract=TRUE))
-   download(url, dest=paste("~/it210/data/", filename, '.zip', sep=""), mode="wb")
+   download(url, dest=paste(filename, '.zip', sep=""), mode="wb")
    print(i)
    }, error=function(e){cat("ERROR :",conditionMessage(e), "\n")})
 }
