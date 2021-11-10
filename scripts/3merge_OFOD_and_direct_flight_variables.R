@@ -8,7 +8,7 @@ library(lubridate)
 library(vroom)
 library(plotly)
 
-setwd("~/it210/data")
+setwd(dirname(rstudioapi::getActiveDocumentContext()$path))## ** this file location as wd **
 
 load("combinada_agregada_rota_mes_empresa.rda")
 load("basica_agregada_rota_mes_empresa.rda")
