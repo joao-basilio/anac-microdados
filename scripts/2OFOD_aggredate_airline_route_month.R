@@ -10,8 +10,7 @@ library(rstudioapi)
 library(geosphere)
 library(readr)
 
-#setwd(dirname(rstudioapi::getActiveDocumentContext()$path)) ** this file location as wd **
-setwd("~/ANAC_MICRODADOS/data")
+setwd(dirname(rstudioapi::getActiveDocumentContext()$path))# ** this file location as wd **
 
 airports_world <- read_delim("airports_world.txt", 
                              "\t", quote = "'", escape_double = FALSE, 
