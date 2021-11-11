@@ -5,7 +5,7 @@ library(dplyr)
 library(stringr)
 library(qdapRegex)
 
-setwd("~/ANAC_MICRODADOS")
+setwd(dirname(rstudioapi::getActiveDocumentContext()$path))## ** this file location as wd **
 
 mirror <- "https://www.gov.br/anac/pt-br/assuntos/regulados/empresas-aereas/envio-de-informacoes/microdados/microdados"
 
